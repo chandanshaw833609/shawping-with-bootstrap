@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/animation.css">
+    <link rel="stylesheet" href="style/shop.css">
+    <link rel="stylesheet" href="style/index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css" integrity="sha512-4wfcoXlib1Aq0mUtsLLM74SZtmB73VHTafZAvxIp/Wk9u1PpIsrfmTvK0+yKetghCL8SHlZbMyEcV8Z21v42UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg position-sticky top-0 ">
+    <div class="container-fluid navigation">
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <h2 class="me-3 border border-3 px-2 bg-light text-dark logo">SHAWPING</h2>
+      <div>
+        <ul class="me-auto mb-2 mb-lg-0 nav-menu">
+          <li class="nav-item">
+            <a class="nav-link first-child" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item" id="shop" style="display: none;">
+            <a class="nav-link current text-black" href="#">Shop</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="iframes">
+        <div class="login">
+          <a href="signin.html"><i class="far fa-user"></i></a>
+          <p id="user_data">LogIn</p>
+        </div>
+      </div>
+    </div>
+</nav>
+
+    <div class="hero scale-up-center">
+        <h1 class="scale-up-center">#Stay Home Save More.</h1>
+        <h5 class="scale-up-center">This winter get upto 50% off!</h5>
+    </div>
+
+
+    <div class="container" id="products">
+      <div class="row text-center">
+          <h2 style="font-family:'Rubik Distressed', cursive; font-size: 50px;">T-SHIRTS</h2>
+          <p style="font-family: 'Satisfy', cursive; font-size:30px">Cool new tshirts are waiting for you.</p>
+      </div>
+      <div class="row products">
+        <div class="col-lg-3 col-6 product">
+          <div class="border border-1 border-dark">
+            <a href="sproduct.html?image/tshirt-1.avif" ><img src="image/tshirt-1.avif" alt=""></a>
+            <h5 style="margin-top:10px;">Tshirt</h5>
+            <p style="color:gold">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </p>
+            <div class="price">
+                <p>$49.99</p>
+                <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+            </div>
+          </div>
+        </div>
+          
+        
+        <div class="col-lg-3 col-6 product">
+          <div class="border border-1 border-dark">
+            <a href="sproduct.html?image/tshiirt-2.avif" ><img src="image/tshiirt-2.avif" alt=""></a>
+            <h5 style="margin-top:10px;">Tshirt</h5>
+            <p style="color:gold">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </p>
+            <div class="price">
+                <p>$49.99</p>
+                <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+            </div>
+          </div>
+        </div>
+          
+        
+        <div class="col-lg-3 col-6 product">
+          <div class="border border-1 border-dark">
+            <a href="sproduct.html?image/tshiirt-3.avif" ><img src="image/tshiirt-3.avif" alt=""></a>
+            <h5 style="margin-top:10px;">Tshirt</h5>
+            <p style="color:gold">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </p>
+            <div class="price">
+                <p>$49.99</p>
+                <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-6 product">
+          <div class="border border-1 border-dark">
+            <a href="sproduct.html?image/tshiirt-1.avif" ><img src="image/tshiirt-4.avif" alt=""></a>
+            <h5 style="margin-top:10px;">Tshirt</h5>
+            <p style="color:gold">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </p>
+            <div class="price">
+                <p>$49.99</p>
+                <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+            </div>
+          </div>
+        </div>
+        
+         
+      </div>
+      <div class="row products">
+        <div class="col-lg-3 col-6 product">
+          <div class="border border-1 border-dark">
+            <a href="sproduct.html?image/tshirt-5.avif" ><img src="image/tshirt-5.avif" alt=""></a>
+            <h5 style="margin-top:10px;">Tshirt</h5>
+            <p style="color:gold">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </p>
+            <div class="price">
+                <p>$49.99</p>
+                <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+            </div>
+          </div>
+        </div>
+          
+        
+        <div class="col-lg-3 col-6 product">
+          <div class="border border-1 border-dark">
+            <a href="sproduct.html?image/tshiirt-6.avif" ><img src="image/tshiirt-6.avif" alt=""></a>
+            <h5 style="margin-top:10px;">Tshirt</h5>
+            <p style="color:gold">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </p>
+            <div class="price">
+                <p>$49.99</p>
+                <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+            </div>
+          </div>
+        </div>
+          
+        
+        <div class="col-lg-3 col-6 product">
+          <div class="border border-1 border-dark">
+            <a href="sproduct.html?image/tshiirt-7.avif" ><img src="image/tshiirt-7.avif" alt=""></a>
+            <h5 style="margin-top:10px;">Tshirt</h5>
+            <p style="color:gold">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </p>
+            <div class="price">
+                <p>$49.99</p>
+                <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-6 product">
+          <div class="border border-1 border-dark">
+            <a href="sproduct.html?image/tshirt-8.avif" ><img src="image/tshirt-8.avif" alt=""></a>
+            <h5 style="margin-top:10px;">Tshirt</h5>
+            <p style="color:gold">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </p>
+            <div class="price">
+                <p>$49.99</p>
+                <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+            </div>
+          </div>
+        </div> 
+      </div>
+  </div>
+
+  <div class="container" id="products">
+    <div class="row text-center">
+        <h2 style="font-family:'Rubik Distressed', cursive; font-size:50px">Jacket</h2>
+        <p style="font-family: 'Satisfy', cursive; font-size:30px">Cool new jackets for this winter.</p>
+    </div>
+    <div class="row products">
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jacket-1.avif" ><img src="image/jacket-1.avif" alt=""></a>
+          <h5 style="margin-top:10px;">Jacket</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div>
+        
+      
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jacket-2.avif" ><img src="image/jacket-2.avif" alt=""></a>
+          <h5 style="margin-top:10px;">Jacket</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div>
+        
+      
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jacket-3.avif" ><img src="image/jacket-3.avif" alt=""></a>
+          <h5 style="margin-top:10px;">Jacket</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jacket-4.avif" ><img src="image/jacket-4.avif" alt=""></a>
+          <h5 style="margin-top:10px;">Jacket</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div>
+      
+       
+    </div>
+    <div class="row products">
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jacket-5.avif" ><img src="image/jacket-5.avif" alt=""></a>
+          <h5 style="margin-top:10px;">Jacket</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div>
+        
+      
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jacket-6.avif" ><img src="image/jacket-6.avif" alt=""></a>
+          <h5 style="margin-top:10px;">Jacket</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div>
+        
+      
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jacket-7.avif" ><img src="image/jacket-7.avif" alt=""></a>
+          <h5 style="margin-top:10px;">Jacket</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jacket-8.avif" ><img src="image/jacket-8.avif" alt=""></a>
+          <h5 style="margin-top:10px;">Jacket</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+  <div class="container" id="products">
+    <div class="row text-center">
+        <h2 style="font-family:'Rubik Distressed', cursive; font-size: 50px;">Jeans</h2>
+        <p style="font-family: 'Satisfy', cursive; font-size:30px">Style like never you done before</p>
+    </div>
+    <div class="row products">
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jean-1.jpg" ><img src="image/jean-1.jpg" alt=""></a>
+          <h5 style="margin-top:10px;">Jeans</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div>
+        
+      
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jean-2.jpg" ><img src="image/jean-2.jpg" alt=""></a>
+          <h5 style="margin-top:10px;">Jeans</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div>
+        
+      
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jean3.jpg" ><img src="image/jean3.jpg" alt=""></a>
+          <h5 style="margin-top:10px;">Jeans</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jean4.jpg" ><img src="image/jean4.jpg" alt=""></a>
+          <h5 style="margin-top:10px;">Jeans</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jean5.jpg" ><img src="image/jean5.jpg" alt=""></a>
+          <h5 style="margin-top:10px;">Jeans</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jean6.jpg" ><img src="image/jean6.jpg" alt=""></a>
+          <h5 style="margin-top:10px;">Jeans</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jeans7.jpg" ><img src="image/jeans7.jpg" alt=""></a>
+          <h5 style="margin-top:10px;">Jeans</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-6 product">
+        <div class="border border-1 border-dark">
+          <a href="sproduct.html?image/jean8.jpg" ><img src="image/jean8.jpg" alt=""></a>
+          <h5 style="margin-top:10px;">Jeans</h5>
+          <p style="color:gold">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </p>
+          <div class="price">
+              <p>$49.99</p>
+              <i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="container-fluid px-3 border-3 border-top bg-black text-light">
+  <footer class="pt-5">
+    <div class="row">
+      <div class="col-6 col-lg-3 mb-2">
+          <h5>About Shawping</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Who are we</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Work with us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Investor relation</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Report Fraud</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></li>
+          </ul>
+        </div>
+
+      <div class="col-6 col-lg-3">
+          <h5>Shapverse</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+      <div class="col-6 col-lg-3">
+        <h5>Learn More</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Security</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Help</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sitemap</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p class="text-muted">Monthly digest of whats new and exciting from us.</p>
+          <div class="d-flex w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between">
+      <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3 fs-4" style="color: white;"><i class="fab fa-twitter-square"></i></li>
+        <li class="ms-3 fs-4" style="color: white;"><i class="fab fa-facebook-square"></i></li>
+        <li class="ms-3 fs-4" style="color: white;"><i class="fab fa-instagram-square"></i></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script type="text/javascript"> 
+
+  function getData(){
+    // localStorage.removeItem("user_data");
+  let user_data =   JSON.parse(localStorage.getItem("user_data"));
+    document.getElementById("user_data").innerHTML = user_data.first_name;
+    document.getElementById("shop").style.display = 'block';
+    document.getElementById("cart").style.display = 'block';
+    document.getElementById("cart_para").style.display = 'block';
+    console.log(user_data.user_name);
+  }
+  getData();
+</script>
+<script src="main.js"></script>
+</html>
