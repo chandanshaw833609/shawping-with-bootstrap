@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button{
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 2px;
+    width: auto;
+    height: 45px;
+    padding: 10px;
+    color: white;
+}
+.button:hover{
+    background-color: crimson;
+    color: white;
+}
+
+.shadow{
+    box-shadow: 5px 5px 5px grey;
+}
+
+/* Hero section start here */
+
+#hero{
+    height: 90vh;
+    background-image: url("https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Satisfy', cursive;
+    height: 80vh;
+    padding: 50px;
+}
+#hero .content .left-content .heading{
+    font-size: 50px;
+}
+#hero .content .right-content .heading{
+    font-size: 50px;
+}
+
+@media(max-width:500px){
+    #hero{
+        height: 25vh;
+    }
+    .content{
+        display: flex;
+        height: 25vh;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+        padding: 0;
+        padding-inline:20px;
+    }
+    #hero .content .left-content .heading{
+        font-size: 15px;
+    }
+    #hero .content .right-content .heading{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:800px) and (min-width:500px){
+    #hero{
+        height: 40vh;
+    }
+    .content{
+        display: flex;
+        height: 40vh;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+        padding: 0;
+        padding-inline:20px;
+    }
+    #hero .content .left-content .heading{
+        font-size: 30px;
+    }
+    #hero .content .right-content .heading{
+        font-size: 30px;
+    }
+}
+    
+.left-content>h1{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.right-content>h1{
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: right;
+}
+
+/* Featured section start here */
+
+.product{
+    margin-bottom: 10px;
+}
+.products .product div img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+@media(max-width:500px){
+    .product{
+        margin-bottom: 10px;
+    }
+    .products .product div img{
+        height: 25vh;
+        object-fit: cover;
+    }
+}
+@media only screen and (max-width:800px) and (min-width:500px){
+    .product{
+        margin-bottom: 10px;
+    }
+}
+
+
+.container .row{
+    margin: 10px;
+}
+.products .product div{
+    padding: 10px;
+    border-radius: 8px;
+}
+.products .product div .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.products .product div .price i{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/* banner section start here */
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-rows: repeat(auto-fit);
+    justify-content: center;
+    align-items: center;
+    margin-inline: 60px;
+}
+.banner_heading{
+    margin-top: 20px; 
+    text-align: center; 
+    font-family: 'Rubik Distressed', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.banner-left{
+    height: 250px;
+    background-image: url("https://images.unsplash.com/photo-1462804993656-fac4ff489837?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60");
+    background-position: cover;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.banner-right{
+    height: 250px;
+    background-image: url("https://images.unsplash.com/photo-1480528813727-199fa7208f62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+
+}
+.banner-left,.banner-right{
+    font-family: 'Satisfy', cursive;
+    margin: 20px;
+}
+
+@media(max-width:500px){
+
+    .banner_heading{
+        font-size: 25px;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .banner-left,.banner-right{
+        height: 20vh;
+        text-transform: lowercase;
+    }
+    .banner-left>h2,.banner-right>h2{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Distressed&family=Satisfy&family=Syne+Mono&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    border-bottom: 0;
+}
+
+/* hero section start from here */
+.hero{
+    background-image: url("https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 50vh;
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.hero h5{
+    color: crimson;
+    font-size: 30px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:500px){
+    .hero{
+        height: 25vh;
+        font-size: 20px;
+    }
+    .hero h5{
+        font-size: 15px;
+    }
+}
+
+label {
+    background-color: white;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 10px;
+    color: black;
+    height: 40px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label i {
+    fill: hsl(0deg 100% 50%);
+    stroke: hsl(0deg 100% 50%);
+    animation: heartButton 1s;
+}
+
+@keyframes heartButton {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.3);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+input + label .action {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    width: auto;
+}
+
+input + label .action span {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    transition: all .5s;
+}
+
+input + label .action span.option-1 {
+    transform: translate(0px,0%);
+    opacity: 1;
+}
+
+input:checked + label .action span.option-1 {
+    transform: translate(0px,-100%);
+    opacity: 0;
+}
+
+input + label .action span.option-2 {
+    transform: translate(0px,100%);
+    opacity: 0;
+}
+
+input:checked + label .action span.option-2 {
+    transform: translate(0px,0%);
+    opacity: 1;
+}
